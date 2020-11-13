@@ -1102,6 +1102,11 @@ MonoBehaviour:
   moveSpeed: 5
   direction: 0
   isWalking: 0
+  knockback: 0
+  knockbackDuration: 0.75
+  knockbackTimer: 0.75
+  knockbackLerp: 0.08
+  knockbackStrength: 3.5
   player: {fileID: 83654581004566460}
   rb: {fileID: 7475278642379674046}
 --- !u!114 &7475278642379674040
@@ -1257,7 +1262,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 41d5d60073df73c42b6436703393bfdd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
