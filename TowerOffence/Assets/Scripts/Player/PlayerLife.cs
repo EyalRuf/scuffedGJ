@@ -3,6 +3,13 @@ using System.Collections;
 
 public class PlayerLife : Destructable
 {
+    Player p;
+
+    void Start()
+    {
+         p = GetComponent<Player>();
+    }
+
     public override void Destroy()
     {
         base.Destroy();
@@ -21,7 +28,14 @@ public class PlayerLife : Destructable
         GetComponent<CircleCollider2D>().enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
 
+        p.pAudio.PlayDeathSound();
         // MOVE PLAYER TO START POS?
+    }
+
+    public new void Damage(float dmg)
+    {
+        p.pAudio.PlayBeingHitSound();
+        base.Damage(dmg);
     }
 
     // Update is called once per frame
@@ -33,13 +47,15 @@ public class PlayerLife : Destructable
     protected override void Respawn()
     {
         base.Respawn();
-        Player p = GetComponent<Player>();
+        
         p.pAttack.enabled = true;
         p.pInput.enabled = true;
         p.pMovement.enabled = true;
         p.pResources.enabled = true;
         GetComponent<CircleCollider2D>().enabled = true;
         GetComponent<SpriteRenderer>().enabled = true;
+
+        p.pAudio.PlayRespawnSound();
     }
 }
 

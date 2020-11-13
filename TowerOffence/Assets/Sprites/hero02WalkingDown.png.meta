@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 9a4f67cdbbd6164469863dd25f10def1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2242390061925584304
+    second: hero02WalkingDown_0
+  - first:
+      213: -575202783554295262
+    second: hero02WalkingDown_1
+  - first:
+      213: 1583328299485467624
+    second: hero02WalkingDown_2
+  - first:
+      213: -8103521854391409718
+    second: hero02WalkingDown_3
+  - first:
+      213: 4170138740332568879
+    second: hero02WalkingDown_4
+  - first:
+      213: -1085503150278767175
+    second: hero02WalkingDown_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,7 +115,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: hero02WalkingDown_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 8
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0523f0f8e1e61e0e0800000000000000
+      internalID: -2242390061925584304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero02WalkingDown_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 8
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a2e6cad187408f0800000000000000
+      internalID: -575202783554295262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero02WalkingDown_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 8
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e397a513bc19f510800000000000000
+      internalID: 1583328299485467624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero02WalkingDown_3
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 8
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3a267cec18a8f80800000000000000
+      internalID: -8103521854391409718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero02WalkingDown_4
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 8
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f212e99071f4fd930800000000000000
+      internalID: 4170138740332568879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero02WalkingDown_5
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 8
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd0115d2a48fe0f0800000000000000
+      internalID: -1085503150278767175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
