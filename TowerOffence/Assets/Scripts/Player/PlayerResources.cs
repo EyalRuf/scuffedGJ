@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using TMPro;
 
 [RequireComponent(typeof(Player))]
 public class PlayerResources : MonoBehaviour
@@ -12,6 +13,9 @@ public class PlayerResources : MonoBehaviour
     public int metal = 0;
 
     public GameObject toolPrefab;
+    public TextMeshProUGUI woodTMP;
+    public TextMeshProUGUI rockTMP;
+    public TextMeshProUGUI metalTMP;
 
     // Update is called once per frame
     void Update()
@@ -19,6 +23,10 @@ public class PlayerResources : MonoBehaviour
         if (player.pInput.craft && (wood > 0 || rock > 0 || metal > 0)) {
             CraftTool();
         }
+
+        woodTMP.text = wood.ToString();
+        rockTMP.text = rock.ToString();
+        metalTMP.text = metal.ToString();
     }
 
     private void CraftTool()

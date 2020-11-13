@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class Tower : Destructable
 {
@@ -8,6 +9,8 @@ public class Tower : Destructable
     public AudioSource towerHitAS;
     public AudioSource towerDiedAS;
     public AudioSource victoryAS;
+
+    public TextMeshProUGUI towerHP;
 
     public override void Destroy()
     {
@@ -22,5 +25,11 @@ public class Tower : Destructable
     {
         towerHitAS.Play();
         base.Damage(dmg);
+    }
+
+    protected override void Update()
+    {
+        base.Update();
+        towerHP.text = ((int) health).ToString();
     }
 }
