@@ -26,9 +26,12 @@ public class PlayerAttack : MonoBehaviour
 
         if (player.pInput.attack && atkCDTimer <= 0)
         {
-            StartCoroutine(Attack());
-            atkCDTimer = ATK_CD_TIME;
-            slapCDTimer = SHARED_CD_TIME;
+            if (tool != null)
+            {
+                StartCoroutine(Attack());
+                atkCDTimer = ATK_CD_TIME;
+                slapCDTimer = SHARED_CD_TIME;
+            }
         }
 
         slapCDTimer = slapCDTimer <= 0 ? 0 : slapCDTimer - Time.deltaTime;
@@ -44,14 +47,8 @@ public class PlayerAttack : MonoBehaviour
     private IEnumerator Attack() 
     {
         AttackHitbox atkHitbox = Instantiate(atkHitboxPrefab, player.transform).GetComponent<AttackHitbox>();
-        atkHitbox.damage = ToolStatsCalc.FIST_DAMAGE;
-        atkHitbox.range = ToolStatsCalc.FIST_RANGE;
-
-        if (tool != null)
-        {
-            atkHitbox.damage = tool.damage;
-            atkHitbox.range = tool.range;
-        }
+        atkHitbox.damage = tool.damage;
+        atkHitbox.range = tool.range;
 
         Vector2 spawnPos = new Vector2(atkSpawnPositions[player.pMovement.direction].localPosition.x, 
             atkSpawnPositions[player.pMovement.direction].localPosition.y);
@@ -66,10 +63,7 @@ public class PlayerAttack : MonoBehaviour
 
         Destroy(atkHitbox.gameObject);
 
-        if (tool != null)
-        {
-            tool.Attacked();
-        }
+        tool.Attacked();
     }
     private IEnumerator Slap()
     {
