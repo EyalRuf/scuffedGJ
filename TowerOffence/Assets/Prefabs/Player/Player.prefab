@@ -1102,6 +1102,11 @@ MonoBehaviour:
   moveSpeed: 5
   direction: 0
   isWalking: 0
+  knockback: 0
+  knockbackDuration: 0.75
+  knockbackTimer: 0.75
+  knockbackLerp: 0.08
+  knockbackStrength: 3.5
   player: {fileID: 83654581004566460}
   rb: {fileID: 7475278642379674046}
 --- !u!114 &7475278642379674040
