@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 3735114649393538433}
   - component: {fileID: 3317637988382298621}
   - component: {fileID: 5396519301743721433}
+  - component: {fileID: 7148865581189985482}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Tower
@@ -248,7 +249,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.033630133}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -259,7 +260,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13, y: 0.13}
+  m_Size: {x: 0.13, y: 0.06273973}
   m_EdgeRadius: 0
 --- !u!114 &5396519301743721433
 MonoBehaviour:
@@ -282,6 +283,20 @@ MonoBehaviour:
   towerHitAS: {fileID: 5209114263403484138}
   towerDiedAS: {fileID: 2631980268719120617}
   victoryAS: {fileID: 1690865154952632523}
+--- !u!114 &7148865581189985482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5878833820632423327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99118c653b7d85c4b9c4c3b6b289b85e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1: {fileID: 0}
+  p2: {fileID: 0}
 --- !u!1 &6163558409036720337
 GameObject:
   m_ObjectHideFlags: 0
