@@ -7,6 +7,13 @@ public class Resource : Destructable
     public PlayerResources lastPHitResources;
     public int resourceType; // 0 = wood, 1 = rock, 2 = metal
 
+    public AudioSource resourceHitAS;
+    public AudioClip resourceHitClip;
+
+    void Start()
+    {
+        resourceHitAS.clip = resourceHitClip;
+    }
 
     // Update is called once per frame
     protected override void Update()
@@ -57,6 +64,7 @@ public class Resource : Destructable
 
     public new void Damage(float dmg)
     {
+        resourceHitAS.Play();
         base.Damage(dmg);
     }
 

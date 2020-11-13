@@ -24,6 +24,8 @@ public class AttackHitbox : MonoBehaviour
         {
             Player p = collision.GetComponent<Player>();
             p.pLife.Damage(damage);
+            p.pMovement.Knockback(player.transform.position);
+
         } else if (collision.tag == "Tower")
         {
             Tower tower = collision.GetComponent<Tower>();

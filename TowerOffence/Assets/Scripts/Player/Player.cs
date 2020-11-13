@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] public PlayerAttack pAttack { get; set; }
     [SerializeField] public PlayerResources pResources { get; set; }
     [SerializeField] public PlayerAnimations pAnimations { get; set; }
+    [SerializeField] public PlayerAudio pAudio { get; set; }
 
     // Use this for initialization
     void Start()
@@ -19,5 +20,6 @@ public class Player : MonoBehaviour
         pAttack = GetComponent<PlayerAttack>();
         pResources = GetComponent<PlayerResources>();
         pAnimations = GetComponent<PlayerAnimations>();
+        pAudio = GetComponent<PlayerAudio>();
     }
 }
