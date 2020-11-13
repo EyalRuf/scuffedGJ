@@ -49,16 +49,19 @@ public class PlayerAttack : MonoBehaviour
         atkHitbox.damage = tool.damage;
         atkHitbox.range = tool.range;
 
-        Vector2 spawnPos = new Vector2(atkSpawnPositions[player.pMovement.direction].localPosition.x, 
+        //Vector2 spawnPos = new Vector2(atkSpawnPositions[player.pMovement.direction].localPosition.x, 
+        //    atkSpawnPositions[player.pMovement.direction].localPosition.y);
+        //float posScale = (atkHitbox.range / 2) > 1 ? atkHitbox.range / 2 : 1;
+        //atkHitbox.transform.localPosition = new Vector2(spawnPos.x * posScale, spawnPos.y * posScale);
+
+        atkHitbox.transform.localPosition = new Vector2(atkSpawnPositions[player.pMovement.direction].localPosition.x, 
             atkSpawnPositions[player.pMovement.direction].localPosition.y);
-        float posScale = (atkHitbox.range / 2) > 1 ? atkHitbox.range / 2 : 1;
-        atkHitbox.transform.localPosition = new Vector2(spawnPos.x * posScale, spawnPos.y * posScale);
         atkHitbox.transform.rotation = atkSpawnPositions[player.pMovement.direction].rotation;
         atkHitbox.player = player;
 
         player.pAnimations.AttackAnimation();
         
-        yield return new WaitForSeconds(.05f);
+        yield return new WaitForSeconds(.15f);
 
         Destroy(atkHitbox.gameObject);
 
@@ -76,7 +79,7 @@ public class PlayerAttack : MonoBehaviour
 
         player.pAnimations.SlapAnimation();
 
-        yield return new WaitForSeconds(.05f);
+        yield return new WaitForSeconds(.15f);
         
         Destroy(atkHitbox.gameObject);
     }

@@ -31,7 +31,7 @@ public class SortingLayerAdjustor : MonoBehaviour
         Vector2 p1Pos = p1.transform.position;
         Vector2 p2Pos = p2.transform.position;
         Vector2 myPos = t.position;
-        Vector2 posToSortWith = p1Pos;
+        Vector2 posToSortWith = p2Pos;
 
         float dis1 = Vector2.Distance(myPos, p1Pos);
         float dis2 = Vector2.Distance(myPos, p2Pos);

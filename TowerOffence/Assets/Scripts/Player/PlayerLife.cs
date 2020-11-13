@@ -25,7 +25,7 @@ public class PlayerLife : Destructable
         p.pInput.enabled = false;
         p.pMovement.enabled = false;
         p.pResources.enabled = false;
-        GetComponent<CircleCollider2D>().enabled = false;
+        GetComponent<CapsuleCollider2D>().enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
 
         p.pAudio.PlayDeathSound();
@@ -52,7 +52,7 @@ public class PlayerLife : Destructable
         p.pInput.enabled = true;
         p.pMovement.enabled = true;
         p.pResources.enabled = true;
-        GetComponent<CircleCollider2D>().enabled = true;
+        GetComponent<CapsuleCollider2D>().enabled = true;
         GetComponent<SpriteRenderer>().enabled = true;
 
         p.pAudio.PlayRespawnSound();
