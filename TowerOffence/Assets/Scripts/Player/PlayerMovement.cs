@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public int direction = 0;
+    public bool isWalking = false;
 
     public Player player;
     public Rigidbody2D rb;
@@ -15,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     {
         float hMovement = player.pInput.movementInput.x;
         float vMovement = player.pInput.movementInput.y;
+
+        isWalking = (Mathf.Abs(hMovement) > 0 || Mathf.Abs(vMovement) > 0);
 
         if (Mathf.Abs(hMovement) > Mathf.Abs(vMovement))
         {
