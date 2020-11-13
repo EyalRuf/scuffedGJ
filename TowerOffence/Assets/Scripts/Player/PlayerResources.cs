@@ -36,6 +36,7 @@ public class PlayerResources : MonoBehaviour
         craftedTool.GetComponent<ToolPositioning>().pMovement = player.pMovement;
 
         player.pAttack.tool = craftedTool;
+        player.pAudio.PlayEquipSound();
 
         wood = 0;
         rock = 0;
@@ -44,14 +45,17 @@ public class PlayerResources : MonoBehaviour
 
     public void AddWood()
     {
+        player.pAudio.PlayResourceSound();
         wood++;
     }
     public void AddRock()
     {
+        player.pAudio.PlayResourceSound();
         rock++;
     }
     public void AddMetal()
     {
+        player.pAudio.PlayResourceSound();
         metal++;
     }
 }

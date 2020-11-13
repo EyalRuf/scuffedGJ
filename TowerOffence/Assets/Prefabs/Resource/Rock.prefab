@@ -22,6 +22,11 @@ PrefabInstance:
       propertyPath: startingHealth
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3042624999219681989, guid: 46e043ef2aa75164c97d310ad2641094,
+        type: 3}
+      propertyPath: resourceHitClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53089cc9b411a8c4c87e8a12b622dad9, type: 3}
     - target: {fileID: 3042624999219681990, guid: 46e043ef2aa75164c97d310ad2641094,
         type: 3}
       propertyPath: m_Name
