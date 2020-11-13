@@ -13,7 +13,6 @@ public class PlayerAttack : MonoBehaviour
     public float SLAP_CD_TIME = 0.5f;
     public float SHARED_CD_TIME = 0.5f;
 
-
     public Player player;
 
     public GameObject atkHitboxPrefab;
