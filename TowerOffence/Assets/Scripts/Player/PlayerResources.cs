@@ -16,6 +16,7 @@ public class PlayerResources : MonoBehaviour
     public TextMeshProUGUI woodTMP;
     public TextMeshProUGUI rockTMP;
     public TextMeshProUGUI metalTMP;
+    public TextMeshProUGUI durabilityTMP;
 
     // Update is called once per frame
     void Update()
@@ -38,6 +39,7 @@ public class PlayerResources : MonoBehaviour
 
         Tool craftedTool = Instantiate(toolPrefab, player.transform).GetComponent<Tool>();
 
+        craftedTool.text = durabilityTMP;
         craftedTool.range = ToolStatsCalc.CalcToolRange(wood, rock, metal);
         craftedTool.durability = ToolStatsCalc.CalcToolDurabilty(wood, rock, metal);
         craftedTool.damage = ToolStatsCalc.CalcToolDamage(wood, rock, metal);

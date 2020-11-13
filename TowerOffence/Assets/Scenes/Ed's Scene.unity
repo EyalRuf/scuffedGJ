@@ -856,7 +856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.4509804, b: 0.4117647, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5616,6 +5616,11 @@ PrefabInstance:
       propertyPath: metalTMP
       value: 
       objectReference: {fileID: 1022125281}
+    - target: {fileID: 1871241954061438696, guid: 920e3df3e1376664ebe13515bbf7690e,
+        type: 3}
+      propertyPath: durabilityTMP
+      value: 
+      objectReference: {fileID: 629535544}
     - target: {fileID: 2119544589645562728, guid: 920e3df3e1376664ebe13515bbf7690e,
         type: 3}
       propertyPath: moveSpeed
@@ -10600,6 +10605,11 @@ PrefabInstance:
       propertyPath: metalTMP
       value: 
       objectReference: {fileID: 1329620781}
+    - target: {fileID: 7377715539766039533, guid: 5bee7bee770240a46bf623c4ec825d20,
+        type: 3}
+      propertyPath: durabilityTMP
+      value: 
+      objectReference: {fileID: 2099761752}
     - target: {fileID: 8929490411829670666, guid: 5bee7bee770240a46bf623c4ec825d20,
         type: 3}
       propertyPath: m_Name
@@ -17234,7 +17244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.4509804, b: 0.4117647, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -18834,7 +18844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9220508, b: 0.7311321, a: 0.83137256}
+  m_Color: {r: 0.9381551, g: 0.7216981, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
