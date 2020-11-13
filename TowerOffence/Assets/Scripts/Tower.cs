@@ -3,18 +3,12 @@ using System.Collections;
 
 public class Tower : Destructable
 {
+    public Player player;
+
     public override void Destroy()
     {
+        Time.timeScale = 0;
+        // WIN GAME
         Destroy(gameObject);
-    }
-
-    // Use this for initialization
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 }

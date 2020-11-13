@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 7475278642379674040}
   - component: {fileID: 2613869631144133176}
   - component: {fileID: 8805807585596125534}
+  - component: {fileID: 189823545439152483}
+  - component: {fileID: 8663555745728866075}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -77,7 +79,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -335415467
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,6 +157,7 @@ MonoBehaviour:
   movementInput: {x: 0, y: 0}
   craft: 0
   attack: 0
+  slap: 0
 --- !u!114 &9126928853785820382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   direction: 0
+  isWalking: 0
   player: {fileID: 83654581004566460}
   rb: {fileID: 7475278642379674046}
 --- !u!114 &7475278642379674040
@@ -188,8 +192,11 @@ MonoBehaviour:
   - {fileID: 2551625238988028802}
   - {fileID: 1348840938593677021}
   - {fileID: 4783139082074693752}
-  ATK_CD_TIME: 1
   atkCDTimer: 0
+  slapCDTimer: 0
+  ATK_CD_TIME: 1
+  SLAP_CD_TIME: 0.5
+  SHARED_CD_TIME: 0.5
   player: {fileID: 83654581004566460}
   atkHitboxPrefab: {fileID: 2602232689379871726, guid: 78000061827ea094d8daf2cb10a3a6ff,
     type: 3}
@@ -206,7 +213,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294ff1e71f2843248a9ac09d3ba1d2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingHealth: 20
   health: 20
+  isRespawining: 0
+  respawnCounter: 0
+  respawnTime: 1
 --- !u!114 &8805807585596125534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +236,37 @@ MonoBehaviour:
   metal: 0
   toolPrefab: {fileID: 5932010733688354503, guid: 062f09716396bb64590f53564214adff,
     type: 3}
+--- !u!114 &189823545439152483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475278642379674041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9029b4c169b1b3f47835f0b3d3431896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &8663555745728866075
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475278642379674041}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70f619df7bb023f4f99728f252e08a93, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7719170649922589597
 PrefabInstance:
   m_ObjectHideFlags: 0

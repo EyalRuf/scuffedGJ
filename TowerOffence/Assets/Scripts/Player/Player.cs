@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] public PlayerLife pLife { get; set; }
     [SerializeField] public PlayerAttack pAttack { get; set; }
     [SerializeField] public PlayerResources pResources { get; set; }
+    [SerializeField] public PlayerAnimations pAnimations { get; set; }
 
     // Use this for initialization
     void Start()
@@ -17,11 +18,6 @@ public class Player : MonoBehaviour
         pLife = GetComponent<PlayerLife>();
         pAttack = GetComponent<PlayerAttack>();
         pResources = GetComponent<PlayerResources>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        pAnimations = GetComponent<PlayerAnimations>();
     }
 }

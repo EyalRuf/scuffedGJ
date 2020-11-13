@@ -7,10 +7,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3042624999219681989, guid: 46e043ef2aa75164c97d310ad2641094,
+        type: 3}
+      propertyPath: startingHealth
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042624999219681989, guid: 46e043ef2aa75164c97d310ad2641094,
+        type: 3}
+      propertyPath: health
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3042624999219681990, guid: 46e043ef2aa75164c97d310ad2641094,
         type: 3}
       propertyPath: m_Name
-      value: Resource
+      value: Wood
       objectReference: {fileID: 0}
     - target: {fileID: 3042624999219682043, guid: 46e043ef2aa75164c97d310ad2641094,
         type: 3}

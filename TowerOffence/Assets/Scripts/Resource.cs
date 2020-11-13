@@ -7,20 +7,28 @@ public class Resource : Destructable
     public PlayerResources lastPHitResources;
     public int resourceType; // 0 = wood, 1 = rock, 2 = metal
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
+        base.Update();
     }
+
     public override void Destroy()
     {
+        base.Destroy();
+
+        // Hide then start respawning
         AddResourceToPlayer();
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
+    }
+
+    protected override void Respawn()
+    {
+        base.Respawn();
+        GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<BoxCollider2D>().enabled = true;
     }
 
     private void AddResourceToPlayer()

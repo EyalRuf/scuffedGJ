@@ -143,5 +143,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f266875e55b393409b8ed84070a212e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingHealth: 5
   health: 5
+  isRespawining: 0
+  respawnCounter: 0
+  respawnTime: 30
   lastPHitResources: {fileID: 0}
+  resourceType: 0
