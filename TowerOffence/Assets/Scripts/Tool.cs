@@ -20,8 +20,13 @@ public class Tool : MonoBehaviour
         }
     }
 
+    void OnDestroy()
+    {
+        text.text = "0";
+    }
+
     void Update()
     {
-        text.text = durability.ToString();
+        text.text = ((int) durability).ToString();
     }
 }

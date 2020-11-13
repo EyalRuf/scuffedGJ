@@ -1151,7 +1151,7 @@ MonoBehaviour:
   health: 20
   isRespawining: 0
   respawnCounter: 0
-  respawnTime: 1
+  respawnTime: 3.5
 --- !u!114 &8805807585596125534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1173,6 +1173,7 @@ MonoBehaviour:
   woodTMP: {fileID: 0}
   rockTMP: {fileID: 0}
   metalTMP: {fileID: 0}
+  durabilityTMP: {fileID: 0}
 --- !u!114 &189823545439152483
 MonoBehaviour:
   m_ObjectHideFlags: 0
