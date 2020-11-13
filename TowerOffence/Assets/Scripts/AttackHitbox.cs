@@ -24,6 +24,13 @@ public class AttackHitbox : MonoBehaviour
         {
             Player p = collision.GetComponent<Player>();
             p.pLife.Damage(damage);
+        } else if (collision.tag == "Tower")
+        {
+            Tower tower = collision.GetComponent<Tower>();
+            if (player.pInput.isP1 != tower.player.pInput.isP1)
+            {
+                tower.Damage(damage);
+            }
         }
     }
 }
